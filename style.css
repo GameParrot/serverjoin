@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+
+body {
+    background-color: #222;
+    font: Poppins;
+}
+
+.name {
+    color: #2889c6;
+    text-shadow: 0 0 10px black;
+    font-family: Poppins;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.server-info a {
+    color: #2889c6;
+    text-decoration: none;
+    transition: color .2s ease, background-color .2s ease;
+}
+
+#content {
+    width: max(500px, min(1000px, 60vw));
+    margin: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    position: fixed;
+    max-height: 100%;
+    overflow-y: scroll;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    display: grid;
+    place-items: center;
+
+    background: #252525;
+    border-radius: 5px;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, .1), 0 0 13px rgba(0, 0, 0, .1);
+    z-index: 100;
+}
+
+#content .topbar {
+    background: #252525;
+    border-radius: 3px 3px 0 0;
+    padding: 30px;
+}
+
+.text_subtitle {
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    font-family: Poppins;
+    font-weight: 700;
+    font-size: 30px;
+    color: white;
+    text-shadow: 0 0 5px white;
+    transition: font-size 0.2s;
+}
+
+.text_title {
+    text-align: center;
+    display: block;
+    font-family: Poppins;
+    font-weight: 700;
+    font-size: 40px;
+    color: rgb(35, 104, 150);
+    text-shadow: 0 0 5px rgb(35, 104, 150);
+    transition: font-size 0.2s;
+}
+
+.servers {
+    width: 80%;
+    text-align: left;
+    place-items: left;
+}
+
+.server {
+    background-color: rgb(44, 44, 44) !important;
+    width: auto !important;
+    border: none !important;
+    border-radius: 10px !important;
+    padding: 8px;
+    padding-bottom: 0px;
+    margin: 5px;
+}
+
+.server-info {
+    overflow: hidden;
+    width: calc(100% - 60px);
+    display: inline-block;
+    cursor: pointer;
+}
+
+.edit {
+    float: right;
+    height: 50px;
+    margin-top: 10px;
+}
+
+.add_button {
+    cursor: pointer;
+    font-family: Poppins;
+    font-weight: 700;
+    font-size: 30px;
+    background-color: rgb(35, 150, 74);
+    color: #ffffff;
+    text-shadow: 0 0 10px black;
+    line-height: 0.9;
+    border: none;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 0 20px rgb(35, 150, 74);
+    transition: box-shadow 0.15s;
+}
